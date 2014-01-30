@@ -22,7 +22,7 @@ The purpose of the app is to "hook" to the native browser of the Android system 
 A bit more technical for fellow developers wanting to dive into the code: 
 (Note: Understanding and appreciation of this part requires basic understanding of Android development.)
 
-0. Application Code Map:
+1. Application Code Map:
 
 Packages are divided according to functionality. This way, when a developer is looking for a class, or wants to add his/her own, it can be done easily. 
 
@@ -38,7 +38,7 @@ Packages are divided according to functionality. This way, when a developer is l
   
   f) com.orestis.tudelftlogger.util ~ Self explanatory, holds all classes that target to help small tasks, like forming the url for the communication with the server, compressing, the string, etc. Also, in this package is a part of a cool animation, as the older Android versions did not have official animation methods.
 
-1. Service orchestration: 
+2. Service orchestration: 
 
 Booting up the phone is caught by its broadcast and upon that, MyBootReceiver class is called.
 This class does two things, in order to enable two different services: one for browser and one for location.
