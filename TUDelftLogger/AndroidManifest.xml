@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.orestis.tudelftlogger"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- Following permissions for retrieving browser searches and history -->
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <!-- For call logs -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- Following permissions for service ignition --> 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Following permissions for location -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- Following permissions for phone id -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<!-- Following permissions for internet state -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tu"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar">
+	
+	<!-- My SPLASH Screen (goes straight to MAIN, UI later)-->
+		<activity 
+		    android:name="SplashActivity">
+		    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+		</activity>
+	<!-- My MAIN (UI) Screen. -->
+        <activity
+            android:name="UIActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity android:name="com.orestis.tudelftlogger.NotificationReceiverActivity"
+            android:theme="@style/Theme.Transparent"
+            android:label="Intent question:" />
+        <activity android:name="com.orestis.tudelftlogger.Preferences"/>
+        <activity android:name="com.orestis.tudelftlogger.PlacesActivity"/>
+        <activity android:name="com.orestis.tudelftlogger.UILocationActivity"/>
+        <activity android:name="com.orestis.tudelftlogger.retrieve.RetrieveLocation"/>
+        <activity android:name="com.orestis.tudelftlogger.retrieve.RetrieveCalls"/>
+        <activity android:name="com.orestis.tudelftlogger.AboutActivity"/>
+        
+        <service android:name=".service.BrowserCheckService" android:icon="@drawable/ic_launcher"></service>
+        <service android:name=".service.LocationCheckService" android:icon="@drawable/ic_launcher"></service>
+        <service android:name=".service.RegisterReceiverService" android:icon="@drawable/ic_launcher"></service>
+        <service android:name=".service.NotificationCancelService" android:icon="@drawable/ic_launcher"></service>
+
+
+        <receiver android:name=".service.MyBootReceiver" >
+ 			<intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.MyScreenReceiver"></receiver>
+        <receiver android:name=".service.MyStartServiceReceiver" ></receiver>
+    </application>
+</manifest>

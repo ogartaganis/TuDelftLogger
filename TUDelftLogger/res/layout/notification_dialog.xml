@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+            <RadioButton
+	            android:id="@+id/radio0"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:checked="true"
+	            android:text="Shopping" />
+	
+	        <RadioButton
+	            android:id="@+id/radio1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/radio0"
+	            android:text="Location" />
+	
+	        <RadioButton
+	            android:id="@+id/radio2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/radio1"
+	            android:text="Weather" />
+	        
+	        <RadioButton
+	            android:id="@+id/radio3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/radio2"
+	            android:text="Sports" />
+	        
+	        <RadioButton
+	            android:id="@+id/radio4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/radio3"
+	            android:text="People" />
+	        
+	        <RadioButton
+	            android:id="@+id/radio5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/radio0"
+	            android:text="Books" />
+	        
+	        <RadioButton
+	            android:id="@+id/radio6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/radio0"
+	            android:layout_below="@id/radio5"
+	            android:text="News Stories" />
+	        
+	        <RadioButton
+	            android:id="@+id/radio7"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/radio0"
+	            android:layout_below="@id/radio6"
+	            android:text="Academic content" />
+	        
+	        <RadioButton
+	            android:id="@+id/radio8"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/radio0"
+	            android:layout_below="@id/radio7"
+	            android:text="Movies" />
+	        
+	        <RadioButton
+	            android:id="@+id/radio9"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/radio0"
+	            android:layout_below="@id/radio8"
+	            android:text="Videos-Music" />
+	        <RadioButton
+	            android:id="@+id/radio10"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/radio4"
+	            android:text="Other: " />
+
+    <EditText
+        android:id="@+id/customTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/radio10"
+        android:layout_alignLeft="@id/radio9"
+        android:ems="10"
+        android:focusable="false"
+		android:focusableInTouchMode="false">
+
+    </EditText>
+    
+    <View
+            android:id="@+id/horizontalLine1"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/customTopic"
+            android:background="#FFF" />
+
+</RelativeLayout>

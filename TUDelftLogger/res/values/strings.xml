@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TUDelft Logger</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="expandable_list_sample_action">Sample action</string>
+	<string name="confirm_entry_deletion_message">Are you sure you want to delete the selected entry? (Cannot be undone)</string>
+	<string name="confirm_total_upload_message">Are you sure you want to upload all non-uploaded entries?</string>
+	<string name="check_network_connection">No network. Please check your data or wifi connection and try again.</string>
+	<string name="confirm_place_deletion_message">Are you sure you want to delete the selected place? (Cannot be undone)</string>
+	<string name="confirm_ip_mess_title">Warning!</string>
+	<string name="confirm_ip_mess_message">Only proceed if instructed by the authors! Leaving the field empty uses the default value. \n\nAre you sure you want to continue? </string>
+	
+	<string name="welcome_message">Welcome to the TUDelft Logger</string>
+	<string name="welcome_message_text">Here are a few getting started instructions, that will guide you through the features of the program.</string>
+	<string name="welcome_message_restart">When you are done, please restart your phone for the application to start operating.</string>
+	<string name="getting_started1_3">Getting Started.. (1 of 3)</string>
+	<string name="getting_started2_3">Getting Started.. (2 of 3)</string>
+	<string name="getting_started3_3">Getting Started.. (3 of 3)</string>
+	<string name="welcome_set_privacy">Set your desired privacy (entry example):</string>
+	<string name="welcome_deleted_message">Note: you can always review your entries and delete if desired and they will look like that:</string>
+	<string name="welcome_review_upload">Remember to review and upload your entries every now and then:</string>
+	<string name="welcome_upload_single">- You can choose to upload anything new with a simple click:</string>
+	<string name="welcome_upload_day">- A whole day:</string>
+	<string name="welcome_upload_new">- Or just a single entry:</string>
+	<string name="welcome_last_least">Last but not least, please set your Places:</string>
+	<string name="welcome_places">For privacy reasons, location is stored relatively to those places, so no latitude/longitude is sent to us: </string>
+	<string name="welcome_do_not_show_again">Do not show these getting started screens again.</string>
+	<string name="welcome_go_to_places">Go to My Places</string>
+	
+	<string name="about_thank_you">Thank you for using the TUDelft Logger, developed by Orestis Gartaganis as part of his final MSc. thesis project.</string>
+	<string name="about_this_project">This project aims to study smartphone users\' search and re-finding behaviour. By re-finding we define the tendacy users have to search for similar queries in different browser sessions, retrieving either same or different results.</string>
+    <string name="about_more_info">More info can be found on the webpage: </string> 
+	
+	<string name="ok">Ok</string>
+	<string name="yes">Yes</string>
+	<string name="caution">Caution!</string>
+	<string name="confirm">Confirm</string>
+	<string name="cont">Continue</string>
+	<string name="skip">Skip</string>
+	<string name="next">Next</string>
+	<string name="back">Back</string>
+	<string name="close">Close</string>
+		
+	<string name="progress_title">Working..</string>
+    <string name="progress_message">Contacting with our server</string>
+    <string name="progress_ioexception">Server is not available, please try again later</string>
+    
+    <string name="button_upload_all">Upload new entries!</string>
+    <string name="button_no_new_entries">No new entries!</string>
+    
+    
+    <string-array name="prePlaces">
+        <item>HOME</item>
+        <item>WORK</item>
+    </string-array>
+    
+    
+    
+	
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <TextView android:id="@+id/textTime"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+    	android:paddingLeft="5dp"
+    	android:textAppearance="?android:attr/textAppearanceSmall"
+    	android:textColor="@color/black"
+    	android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:paddingRight="20dp"
+        android:text="Date"/>
+    
+    <ImageView android:id="@+id/image_uploaded_loc"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:src="@drawable/btn_check"/>
+    
+    <TextView android:id="@+id/textMeters"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+    	android:textColor="@color/black"
+    	android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/image_uploaded_loc"
+        android:text="Meters"
+        />
+    
+    <TextView android:id="@+id/textTag"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+    	android:textColor="@color/black"
+    	android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/textMeters"
+        android:text="Tag"
+        />
+</RelativeLayout> 

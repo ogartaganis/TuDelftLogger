@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/welcome_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" >
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/welcome_set_privacy"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+		<RadioButton
+	    	android:id="@+id/radio0"
+	   	    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/textView2"
+			android:layout_marginTop="15dp"
+			android:checked="true"
+			android:text="Low Privacy:" />
+		
+		
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/radio0"
+		    android:layout_marginLeft="40dp"
+		    android:src="@drawable/low_privacy" />
+	
+		<RadioButton
+		    android:id="@+id/radio1"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/imageView1"
+			android:layout_marginTop="15dp"
+			android:text="High Privacy:" />
+		
+		
+		<ImageView
+		    android:id="@+id/imageView2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/radio1"
+		    android:layout_marginLeft="40dp"
+		    android:src="@drawable/high_privacy" />
+		
+		<TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/imageView2"
+            android:text="@string/welcome_deleted_message"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		<ImageView
+		    android:id="@+id/imageView3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/textView3"
+		    android:layout_marginLeft="40dp"
+		    android:src="@drawable/deleted_privacy" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

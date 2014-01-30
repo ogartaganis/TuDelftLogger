@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="General Settings">
+		<!-- <CheckBoxPreference android:title="Splash Screen"
+			android:key="showsplash"
+			android:defaultValue="true" />-->
+			<CheckBoxPreference android:title="Welcome Screen"
+			    android:key="getting_started"
+			    android:defaultValue="true" />		
+	</PreferenceCategory> 
+	
+	<PreferenceCategory android:title="Privacy Settings">
+		<ListPreference
+		    android:title="Logger Privacy"
+            android:key="privacy"
+            android:entries="@array/privacySetting"
+            android:summary="Select your desired privacy."
+            android:entryValues="@array/privacySettingValues"
+            android:defaultValue="1"
+            />    
+	</PreferenceCategory>
+	<PreferenceCategory 
+        android:title="Debugging Settings">
+
+        <EditTextPreference
+            android:key="ipAddress"
+            android:title="Server IP Address" 
+            android:summary="Define the server IP"
+            android:dialogTitle="Server IP Address"
+            android:dialogMessage="Please provide the ip address as instructed"    
+            android:defaultValue="" />
+        
+        <!-- <EditTextPreference
+            android:key="ipAddress"
+            android:title="Server IP Address"
+            android:dialogIcon="@android:drawable/ic_dialog_alert"
+            android:dialogTitle="Server IP Address"
+            android:dialogMessage="@string/confirm_ip_mess_message"    
+            android:defaultValue="" /> -->
+            
+    </PreferenceCategory>
+</PreferenceScreen>
