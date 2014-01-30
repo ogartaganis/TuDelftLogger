@@ -25,11 +25,17 @@ A bit more technical for fellow developers wanting to dive into the code:
 0. Application Code Map:
 
 Packages are divided according to functionality. This way, when a developer is looking for a class, or wants to add his/her own, it can be done easily. 
+
   a) com.orestis.tudelftlogger ~ The basic package. Contains all the main -activities-. In general, when a class has the ending *Activity, it denotes, well, an activity and not a service, broadcast, etc. is involved. In this package, we spot the SplashActivity, which is displayed for 1,5 second and shows the logo of our group, Web Information Systems of TU Delft. Then, the UIActivity is the main activity, showing the logged -browser- entries sorted by date, newest top. The equivalent UILocationActivity is next, by pressing the "Loc" button. Preferences holds the settings by the user, PlacesActivity is where the user stores their most frequent whereabouts and NotificationReceiverActivity, is the intent selector (topic) at the moment of a search capture.
+  
   b) com.orestis.tudelftlogger.service ~ Service classes, two main services are the BrowserCheckService and the LocationCheckService. They are called as described in  [1. Service orchestration.]
+  
   c) com.orestis.tudelftlogger.database ~ Databases are pretty standard, and it essentially involves a Helper Class that translates the strings needed to fields and thus, easier to be handled. A number of custom objects are defined, all serving the purpose denoted by their name: MBrowser, MLocation, MPlace, Results (the latter helps in the population of the list in the UI).
+  
   d) com.orestis.tudelftlogger.retrieve ~ This package helps us retrieve two sets of information: Call statistics and location information.
+  
   e) com.orestis.tudelftlogger.sensors ~ This one holds data collected from the sensors. For the time being, it holds only implementation of the light data logger.
+  
   f) com.orestis.tudelftlogger.util ~ Self explanatory, holds all classes that target to help small tasks, like forming the url for the communication with the server, compressing, the string, etc. Also, in this package is a part of a cool animation, as the older Android versions did not have official animation methods.
 
 1. Service orchestration: 
